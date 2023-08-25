@@ -1,0 +1,135 @@
+/* Define o estilo para o elemento body */
+
+body {
+    /* Faz com que o conteúdo do elemento body seja exibido em um layout flexível */
+    display: flex;
+    
+    /* Centraliza o conteúdo horizontalmente */
+    justify-content: center;
+    
+    /* Centraliza o conteúdo verticalmente */
+    align-items: center;
+    
+    /* Define a altura do elemento body como 100% da altura da viewport (visualização do usuário) */
+    height: 100vh;
+    
+    /* Define a cor de fundo do elemento body para um tom de cinza */
+    background-color: rgb(49, 48, 48);
+  }
+  
+  /* Define o estilo para o elemento com o ID 'search-button' */
+  
+  #search-button {
+    /* Remove a borda do elemento */
+    border: none;
+    
+    /* Define a largura do elemento como 250 pixels */
+    width: 250px;
+    
+    /* Define a altura do elemento como 50 pixels */
+    height: 50px;
+    
+    /* Define o raio de borda (border-radius) do elemento como 5 pixels, criando cantos arredondados */
+    border-radius: 5px;
+    
+    /* Define a cor de fundo do elemento como um tom de verde */
+    background-color: rgb(17, 203, 92);
+    
+    /* Define a cor do texto do elemento como um tom de cinza com transparência */
+    color: rgba(112, 111, 111, 0.308);
+    
+    /* Define a fonte do texto como "Trebuchet MS", Arial, sans-serif */
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    
+    /* Define o peso da fonte como negrito (bold) */
+    font-weight: 900;
+    
+    /* Define o tamanho da fonte como 20 pixels */
+    font-size: 20px;
+    
+    /* Define uma transição para a propriedade de cor de fundo com duração de 0.3 segundos */
+    transition: background-color 0.3s;
+    
+    /* Faz com que o conteúdo do elemento seja exibido em um layout flexível */
+    display: flex;
+    
+    /* Centraliza o conteúdo horizontalmente */
+    justify-content: center;
+    
+    /* Centraliza o conteúdo verticalmente */
+    align-items: center;
+    
+    /* Define o cursor do mouse como um ponteiro para indicar que o elemento é clicável */
+    cursor: pointer;
+  }
+  
+  /* Define o estilo para o elemento com o ID 'search-button' quando o cursor estiver sobre ele (hover) */
+  
+  #search-button:hover {
+    /* Define a cor de fundo do elemento como um tom mais claro de verde quando o cursor está sobre ele */
+    background-color: rgb(68, 255, 99);
+  }
+  
+  /* Define o estilo para o elemento com o ID 'search-button' quando está sendo pressionado (ativo) */
+  
+  #search-button:active {
+    /* Define a cor de fundo do elemento como um tom escuro de verde quando está sendo pressionado */
+    background-color: rgb(8, 134, 69);
+  }
+  
+  /* Define o estilo para o elemento com a classe 'loading' dentro do elemento com o ID 'search-button' */
+  
+  #search-button .loading {
+    /* Define a largura do elemento como 25 pixels */
+    width: 25px;
+    
+    /* Define a altura do elemento como 25 pixels */
+    height: 25px;
+    
+    /* Define o raio de borda (border-radius) do elemento como 50%, tornando-o um círculo */
+    border-radius: 50%;
+    
+    /* Define a caixa de conteúdo (box-sizing) do elemento como 'border-box', incluindo a borda no dimensionamento total */
+    box-sizing: border-box;
+    
+    /* Define a largura da borda do elemento como 5 pixels e a cor da borda como um tom de preto com transparência */
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    
+    /* Define a cor da borda à direita como um tom de vermelho */
+    border-right-color: rgb(239, 27, 27);
+    
+    /* Define a animação 'loading-animation' para o elemento com duração de 2 segundos e repetição infinita (infinite) */
+    animation: loading-animation 2s linear infinite;
+  }
+  
+  /* Define o estilo para o elemento <h4> dentro do elemento com o ID 'search-button' */
+  
+  #search-button h4 {
+    /* Remove a margem (espaço) e o preenchimento (padding) do elemento <h4> */
+    margin: 0;
+    padding: 0;
+    
+    /* Define a cor do texto do elemento <h4> como branco (#fff) */
+    color: #fff;
+  }
+  
+  /* Define que todos os elementos filhos do elemento com o ID 'search-button' que possuem a classe 'loading' terão seu conteúdo ocultado */
+  
+  #search-button .loading * {
+    display: none;
+  }
+  
+  /* Define a animação 'loading-animation' que será utilizada para o elemento com a classe 'loading' dentro do elemento com o ID 'search-button' */
+  
+  @keyframes loading-animation {
+    /* Define a configuração da animação no momento inicial (0%) */
+    0% {
+      transform: rotate(0deg);
+    }
+    
+    /* Define a configuração da animação no momento final (100%) */
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
